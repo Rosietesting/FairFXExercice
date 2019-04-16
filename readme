@@ -1,1 +1,27 @@
-readme
+Test documentation : 
+
+ I have written the following  automation test in java/reassured :
+
+ - Create a post
+ - Update a post
+ - Find a inexistent post
+
+
+The test: 
+
+- I have  implemented the build pattern  in order to demonstrate how a  rest-assured automation for rest-api can be automated.
+
+
+Constrains :
+
+ * Given that the post are not created in the database, I have created the resource (e.g a post ) and have asserted that  it was returned  via the API.  I did not perform checks to see if the resource  have been saved .
+
+
+Requirement to run the test: 
+
+This is a maven project created in Java using the rest assured library.  Java and maven are necessary in order to perform the test
+The tests can be run via the comment line
+ mvn -Dtest=PostTest test
+I have added the maven-surefire-report-plugin in order to create a report of the run.
+
+It is expected that searchForAnInexistentPost fails and the other test passes.
